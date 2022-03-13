@@ -32,3 +32,49 @@
     display: none;
 }
 
+#first-question-first-answer {
+    margin: 0;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    background-color: indigo;
+    color: white;
+    width: 9%;
+    text-align: left;
+    font-size: 15px;
+}
+
+#first-question-second-answer {
+    margin: 0;
+    position: absolute;
+    top: 18%;
+    left: 35%;
+    background-color: indigo;
+    color: white;
+    width: 9%;
+    text-align: left;
+    font-size: 15px;
+}
+
+#first-question-third-answer {
+    margin: 0;
+    position: absolute;
+    top: 21%;
+    left: 35%;
+    background-color: indigo;
+    color: white;
+    width: 9%;
+    text-align: left;
+    font-size: 15px;
+}
+#first-question-fourth-answer {
+    margin: 0;
+    position: absolute;
+    top: 24%;
+    left: 35%;
+    background-color: indigo;
+    color: white;
+    width: 9%;
+    text-align: left;
+    font-size: 15px;
+}
