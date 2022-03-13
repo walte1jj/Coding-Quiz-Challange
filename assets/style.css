@@ -1,0 +1,34 @@
+.high-scores {
+    color: fuchsia;
+    font-size: small;
+    font-weight: lighter;
+
+}
+
+#multiple-choice {
+    font: weight 900px;
+    padding: 5px;
+    border-radius: 12px;
+    margin: auto;
+    width: 30%;
+}
+
+#multiple-choice p {
+    width: 114%;
+    margin-left: -28%;
+    text-align: center;
+}
+
+.startButton {
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    background-color: indigo;
+    color: white;
+}
+
+.firstQuestion {
+    display: none;
+}
+
