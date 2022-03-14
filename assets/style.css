@@ -2,7 +2,13 @@
     color: fuchsia;
     font-size: small;
     font-weight: lighter;
+    display: inline;
 
+}
+
+#countdown {
+    float: right;
+    
 }
 
 #multiple-choice {
@@ -21,7 +27,7 @@
 
 .startButton {
     margin: 0;
-    position: absolute;
+    position: relative;
     top: 20%;
     left: 41%;
     background-color: indigo;
@@ -34,47 +40,161 @@
 
 #first-question-first-answer {
     margin: 0;
-    position: absolute;
+    position: relative;
     top: 15%;
     left: 35%;
     background-color: indigo;
     color: white;
-    width: 9%;
+    width: 11%;
     text-align: left;
     font-size: 15px;
 }
 
 #first-question-second-answer {
     margin: 0;
-    position: absolute;
+    position: relative;
     top: 18%;
     left: 35%;
     background-color: indigo;
     color: white;
-    width: 9%;
+    width: 11%;
     text-align: left;
     font-size: 15px;
+    margin-top: 5px;
 }
 
 #first-question-third-answer {
     margin: 0;
-    position: absolute;
+    position: relative;
     top: 21%;
     left: 35%;
     background-color: indigo;
     color: white;
-    width: 9%;
+    width: 11%;
     text-align: left;
     font-size: 15px;
+    margin-top: 5px;
 }
 #first-question-fourth-answer {
     margin: 0;
-    position: absolute;
+    position: relative;
     top: 24%;
     left: 35%;
     background-color: indigo;
     color: white;
-    width: 9%;
+    width: 11%;
     text-align: left;
     font-size: 15px;
+    margin-top: 5px;
+}
+
+.secondQuestion {
+    display: none;
+}
+
+#second-question-first-answer {
+    margin: 0;
+    position: relative;
+    top: 15%;
+    left: 35%;
+    background-color: indigo;
+    color: white;
+    width: 11%;
+    text-align: left;
+    font-size: 15px;
+}
+
+#second-question-second-answer {
+    margin: 0;
+    position: relative;
+    top: 18%;
+    left: 35%;
+    background-color: indigo;
+    color: white;
+    width: 11%;
+    text-align: left;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+#second-question-third-answer {
+    margin: 0;
+    position: relative;
+    top: 21%;
+    left: 35%;
+    background-color: indigo;
+    color: white;
+    width: 11%;
+    text-align: left;
+    font-size: 15px;
+    margin-top: 5px;
+}
+#second-question-fourth-answer {
+    margin: 0;
+    position: relative;
+    top: 24%;
+    left: 35%;
+    background-color: indigo;
+    color: white;
+    width: 11%;
+    text-align: left;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.thirdQuestion {
+    display: none;
+}
+
+#third-question-first-answer {
+    margin: 0;
+    position: relative;
+    top: 15%;
+    left: 35%;
+    background-color: indigo;
+    color: white;
+    width: 11%;
+    text-align: left;
+    font-size: 15px;
+}
+
+#third-question-second-answer {
+    margin: 0;
+    position: relative;
+    top: 18%;
+    left: 35%;
+    background-color: indigo;
+    color: white;
+    width: 11%;
+    text-align: left;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+#third-question-third-answer {
+    margin: 0;
+    position: relative;
+    top: 21%;
+    left: 35%;
+    background-color: indigo;
+    color: white;
+    width: 11%;
+    text-align: left;
+    font-size: 15px;
+    margin-top: 5px;
+}
+#third-question-fourth-answer {
+    margin: 0;
+    position: relative;
+    top: 24%;
+    left: 35%;
+    background-color: indigo;
+    color: white;
+    width: 11%;
+    text-align: left;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.allDone {
+    display: none;
 }
