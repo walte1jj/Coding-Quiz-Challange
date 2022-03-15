@@ -7,9 +7,8 @@ quizChallengeEl.appendChild(quizChallenge);
 quizChallenge.className = "quizChallenge";
 quizChallenge.setAttribute("id", "opening");
 
-//timer document.getElementById("first-question-first-answer").addEventListener("click", firstWrong);
+//timer
 var timeleft = 75;
-//document.addEventListener("click", function(downloadTimer) {});
 var downloadTimer = setInterval(function() {  
   if(timeleft <= 0){
     clearInterval(downloadTimer);
@@ -19,6 +18,7 @@ var downloadTimer = setInterval(function() {
   };
   timeleft -= 1;
 }, 1000)
+
 
 // opening paragraph
 var opening = document.createElement("p");
@@ -96,6 +96,7 @@ firstQuestionAnswerFourEl.setAttribute("id", "first-question-fourth-answer");
 // Right or wrong answer first
 document.getElementById("first-question-third-answer").addEventListener("click", firstCorrect);
 function firstCorrect() {
+    localStorage.setItem("first question", "10");
     document.getElementById("first-question-third-answer").style.display = "none";
     document.getElementById("first-question-first-answer").style.display = "none";
     document.getElementById("first-question-second-answer").style.display = "none";
@@ -120,7 +121,7 @@ function firstWrong() {
     document.getElementById("first-question-first-answer").style.display = "none";
     document.getElementById("first-question-second-answer").style.display = "none";
     document.getElementById("first-question-fourth-answer").style.display = "none";
-    document.getElementById("first-question").style.display = "none"
+    document.getElementById("first-question").style.display = "none";
     document.getElementById("second-question").style.display = "block";
     document.getElementById("second-question-first-answer").style.display = "block";
     document.getElementById("second-question-second-answer").style.display = "block";
@@ -173,11 +174,12 @@ secondQuestionAnswerFourEl.setAttribute("id", "second-question-fourth-answer");
 // Right or wrong answer second
 document.getElementById("second-question-third-answer").addEventListener("click", secondCorrect);
 function secondCorrect() {
+    localStorage.setItem("second question", "10");
     document.getElementById("second-question-third-answer").style.display = "none";
     document.getElementById("second-question-first-answer").style.display = "none";
     document.getElementById("second-question-second-answer").style.display = "none";
     document.getElementById("second-question-fourth-answer").style.display = "none";
-    document.getElementById("second-question").style.display = "none"
+    document.getElementById("second-question").style.display = "none";
     document.getElementById("third-question").style.display = "block";
     document.getElementById("third-question-first-answer").style.display = "block";
     document.getElementById("third-question-second-answer").style.display = "block";
@@ -197,7 +199,7 @@ function secondWrong() {
     document.getElementById("second-question-first-answer").style.display = "none";
     document.getElementById("second-question-second-answer").style.display = "none";
     document.getElementById("second-question-fourth-answer").style.display = "none";
-    document.getElementById("second-question").style.display = "none"
+    document.getElementById("second-question").style.display = "none";
     document.getElementById("third-question").style.display = "block";
     document.getElementById("third-question-first-answer").style.display = "block";
     document.getElementById("third-question-second-answer").style.display = "block";
@@ -250,12 +252,13 @@ thirdQuestionAnswerFourEl.setAttribute("id", "third-question-fourth-answer");
 // Right or wrong answer third
 document.getElementById("third-question-fourth-answer").addEventListener("click", thirdCorrect);
 function thirdCorrect() {
+    localStorage.setItem("third question", "10");
     document.getElementById("third-question-third-answer").style.display = "none";
     document.getElementById("third-question-first-answer").style.display = "none";
     document.getElementById("third-question-second-answer").style.display = "none";
     document.getElementById("third-question-fourth-answer").style.display = "none";
-    document.getElementById("third-question").style.display = "none"
-    //document.getElementById("first-question").style.display = "block";
+    document.getElementById("third-question").style.display = "none";
+    document.getElementById("all-done").style.display = "block";
 };
 
 document.getElementById("third-question-first-answer").addEventListener("click", thirdWrong);
@@ -266,12 +269,12 @@ function thirdWrong() {
     if (thirdWrong = "click") {
         (timeleft = timeleft - 10);
     }
-    document.getElementById("second-question-third-answer").style.display = "none";
-    document.getElementById("second-question-first-answer").style.display = "none";
-    document.getElementById("second-question-second-answer").style.display = "none";
-    document.getElementById("second-question-fourth-answer").style.display = "none";
-    document.getElementById("second-question").style.display = "none"
-    //document.getElementById("first-question").style.display = "block";
+    document.getElementById("third-question-third-answer").style.display = "none";
+    document.getElementById("third-question-first-answer").style.display = "none";
+    document.getElementById("third-question-second-answer").style.display = "none";
+    document.getElementById("third-question-fourth-answer").style.display = "none";
+    document.getElementById("third-question").style.display = "none";
+    document.getElementById("all-done").style.display = "block";
 };
 
 // All done page
@@ -284,3 +287,28 @@ allDoneEl.appendChild(allDone);
 allDone.className = "allDone";
 allDone.setAttribute("id", "all-done");
 
+localStorage.getItem("first question");
+
+
+// game over
+
+function gameOver() {
+    if (timeleft = 75) {
+        document.getElementById("all-done").style.display = "block";
+    }
+}
+
+// keep score
+var keepScore = function() {
+    localStorage.getItem('Json.parse', "first question" + "second question" + "third question");
+}
+keepScore();
+
+console.log(keepScore);
+/*const gameOver = delay => {
+    document.getElementById("all-done").style.display ="block";
+    };
+    setTimeout(gameOver, 76 * 1000, 76);*/
+    
+   // document.getElementById("all-done").style.display = "block";
+//}};
